@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "deathfx",
+	"version": "${version}",
+	"name": "DeathFX",
+	"description": "Lets you spawn effects when someone perishes. Ported to 1.21 by Miami.",
+	"authors": [
+		"Miami, FoxOnTop"
+	],
+	"contact": {
+		"sources": "https://github.com/miamionthetrack/DeathFX",
+        "issues": "https://github.com/miamionthetrack/DeathFX/issues"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/DeathFX/icon.png",
+	"environment": "*",
+	"entrypoints": {
+      "client": [
+        "dev.miami.deathfx.client.DeathFXClient"
+      ],
+      "modmenu": [
+        "dev.miami.deathfx.ModMenuIntegration"
+      ]
+	},
+	"mixins": [
+		"deathfx.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.4",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*",
+        "modmenu": "*",
+        "cloth-config": "*"
+	}
+}
